@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeri Kenangan</title>
+        <link rel="icon" href="logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body id="body1">
+    <nav>
+      <div class="dropdown">
+        <div class="drp">
+          <img src="logo.png" alt="logo" class="dropdown-btn"/>
+          <h2>memory</h2>
+        </div>
+        <div class="dropdown-content">
+          <label class="switch">
+            <input type="checkbox" id="darkModeToggle">
+            <span class="slider"></span>
+          </label>
+          <br />
+          <br />
+          <a href="#Login">Login</a>
+        </div>
+      </div>
+      <button id="vip">VIP</button>
+    </nav>
+
+    <div class="upload-section">
+      <input type="file" id="uploadInput" accept="image/*, video/*" />
+      <button onclick="uploadMedia()" class="btn-blue">Upload</button>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+
+    <div class="modal" id="modal">
+      <div id="modalContent" class="modal-content"></div>
+    </div>
+ 
+    <script src="js/script.js"></script>
+  </body>
+</html>
